@@ -35,6 +35,12 @@
 
 return array(
 
-	'docs' => array('handles' => 'docs'),
-
+	//'docs' => array('handles' => 'docs'),
+	'bootstrapper' => array('auto' => true),
+	'former' => array('auto' => true),
+	'language-builder' => array(
+		'location' => 'language-builder',
+		'handles' => 'language-builder',
+	),
+	'swiftmailer' => array('auto'=>false), // I prefer Bundle::start('swiftmailer');
 );

@@ -4,3 +4,12 @@
 [submodule "bundles/language-builder"]
 	path = bundles/language-builder
 	url = git@github.com:Pasvaz/language-builder.git
+[submodule "bundles/bootstrapper"]
+	path = bundles/bootstrapper
+	url = https://github.com/Pasvaz/bootstrapper.git
+[submodule "bundles/former"]
+	path = bundles/former
+	url = https://github.com/Pasvaz/former.git
+[submodule "bundles/swiftmailer"]
+	path = bundles/swiftmailer
+	url = https://github.com/Pasvaz/swiftmailer.git

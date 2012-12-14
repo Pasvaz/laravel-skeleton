@@ -6,8 +6,17 @@
 	<title>Laravel: A Framework For Web Artisans</title>
 	<meta name="viewport" content="width=device-width">
 	{{ HTML::style('laravel/css/style.css') }}
+	{{ Asset::container('bootstrapper')->styles();}}
+	{{ Asset::container('bootstrapper')->scripts();}}
 </head>
 <body>
+	{{Alert::warning("This is just a test of Former")}}
+	<?$bs=Former::Framework('bootstrap');?>
+	{{Form::open()}}
+	{{Form::token();}}
+	{{Former::select('clients')->options(array("Ciao", "paisà"), 2)->help('Pick some dude')->state('warning')}}
+	{{Former::four_text('foo')->state('error')->help('bar')}}
+	{{Form::close()}}
 	<div class="wrapper">
 		<header>
 			<h1>Laravel</h1>
