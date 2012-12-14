@@ -1,0 +1,6 @@
+[submodule "bundles/oneauth"]
+	path = bundles/oneauth
+	url = git@github.com:Pasvaz/laravel-oneauth.git
+[submodule "bundles/language-builder"]
+	path = bundles/language-builder
+	url = git@github.com:Pasvaz/language-builder.git
