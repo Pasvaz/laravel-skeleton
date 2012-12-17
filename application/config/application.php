@@ -39,7 +39,7 @@ return array(
 	|
 	*/
 
-	'index' => 'index.php',
+	'index' => '',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -53,7 +53,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKeyGoesHere!',
+	'key' => 'ObzkrVUIfqK2AJiBU0ahAbP95uEywrz7',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -67,7 +67,7 @@ return array(
 	|
 	*/
 
-	'profiler' => false,
+	'profiler' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -220,7 +220,7 @@ return array(
 		'Typography'	=> 'Bootstrapper\\Typography',
 
 		//Former
-		'Former' 		=> 'Former\Former',
+		'Former' 		=> 'Former\\Former',
 	),
 
 );
