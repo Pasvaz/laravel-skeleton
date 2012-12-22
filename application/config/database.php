@@ -72,7 +72,7 @@ return array(
 			'host'     => 'localhost',
 			'database' => 'laravel',
 			'username' => 'root',
-			'password' => 'db.zeus',
+			'password' => '',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 		),
