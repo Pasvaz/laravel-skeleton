@@ -92,7 +92,26 @@ Event::listen('500', function()
 
 Route::filter('before', function()
 {
-	// Do stuff before every request to your application...
+	if( !Session::get('language') ) {
+		//Log::info('Session misses lang');
+
+		$accepted_languages = array('en', 'it');
+		$user_language = 'en';
+		// if ( Auth::check() ) {
+		// 	if ( in_array(Auth::user()->idioma, $accepted_languages) ) {
+		//    		$user_language = Auth::user()->idioma;
+		//    	}
+		//    }
+		Session::put('language', $user_language);
+		//Log::info('Session now is '.$user_language);
+	} else {
+		$user_language = Session::get('language');
+		//Log::info('Session has '.$user_language);
+	}
+
+		//Log::info('Config has '.Config::get('application.language'));
+	Config::set('application.language', $user_language);
+	//Log::success('Ends '.$user_language);
 });
 
 Route::filter('after', function($response)
@@ -109,5 +128,29 @@ Route::filter('auth', function()
 {
 	if (Auth::guest()) return Redirect::to('login');
 });
+
+Route::get('language/(:num)', function($lang)
+{
+	//if (!Input::get('language') or !is_numeric(Input::get('language'))) Response::error('500');
+	//$lang = Input::get('language');
+	$langarray = array(0=>'it', 1=>'en');
+	$user_language=$langarray[$lang];
+	Config::set('application.language', $user_language);
+	Session::put('language', $user_language);
+	//Log::success('Setting '.$user_language);
+	//Log::success('getting '.Session::get('language'));
+	return Redirect::home();
+});
+
+Route::any('logout', array('as' => 'logout', function()
+{
+    Auth::logout();
+    //echo URL::home(302);
+   	return Redirect::to(URL::home(),302);
+}));
+
+Route::any('/profile', 'profile@view');
+Route::any('/profile/(:num)', 'profile@view');
+Route::any('/profile/index/(:all?)', 'profile@view');
 
 Route::controller(Controller::detect());

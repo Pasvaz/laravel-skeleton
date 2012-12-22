@@ -32,35 +32,83 @@
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
 
-    <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-    
-    <? 
-    echo Bootstrapper\Navbar::create(null,Navbar::FIX_TOP)
+    <?
+    $user_name = $array_usermenu = $array_register_menu = $array_login_menu = $array_login_attr = null;
+
+    if (Auth::guest()) {
+      $modal_remote = Bootstrapper\Modal::create('ModalLogin')
+        ->with_header('Login')
+        ->with_data_remote('/login/index/popup');
+
+      $modal_remote->autofooter = false;
+      $array_register_menu = array(__('interface.signup'), '/login/newuser', false, false, null, 'aw_user');
+      $array_login_menu = array(Navigation::link('Login', '#', false, false, null, 'aw_key icon-white'));
+      $array_login_attr = $modal_remote->get_launcher_attributes()+array('class'=>'pull-right');
+
+      echo $modal_remote;
+    }
+    else {
+      $user_name = Auth::user()->name;
+      $array_usermenu = array($user_name, '#', false, false,
+                          array(
+                            array(__('interface.profile'), '/profile'),
+                            array(Navigation::DIVIDER),
+                            //array(Navigation::HEADER, 'Logout'),
+                            array(__('interface.logout'), '/logout'),
+                          )
+                        );
+    }
+
+    // Navigation Bar
+    echo Bootstrapper\Navbar::inverse(null, Navbar::FIX_TOP)
     ->with_brand('Skeleton', '#')
+
+/*
+    ->with_menus(
+      '<ul class="pull-right nav"><li>'.
+      Former::open_inline('/language', 'GET', array('class'=>'navbar-search pull-right')).
+      Former::select('language', '', array('Italiano', 'English'), 'Italiano', array('class'=>'search-query span2')).
+      Former::mini_submit('change', array('Italiano', 'English'), 'Italiano', array('class'=>'search-query span2')).
+      '</form>'.
+      '</li></ul>'
+      )
+
+*/
+/*  Search Box
     ->with_menus(
       '<form class="navbar-search pull-right" action="">
         <input type="text" class="search-query span2" placeholder="Search">
       </form>')
+*/
+
+    ->with_menus(
+      array(Navigation::link(Config::get('application.language', 'en'), '#', false, false, 
+            array(
+              array('label'=>'English', 'url'=>'/language/1'),
+              array('label'=>'Italiano', 'url'=>'/language/0'),
+            ), 'flag icon-white')),
+      array('class' => 'pull-right')
+    )
+
+    // Login
+    ->with_menus($array_login_menu, $array_login_attr)
+
+    // Home
+    ->with_menus(
+      array(Navigation::link('Home', '/', false, false, null, 'home icon-white')),
+      array('class' => 'pull-left')
+    )
+
+    // Home, Register, User Menu
     ->with_menus(
         Navigation::links(
         array(
-          array('Home', '#', true),
-          array('Login', '/login'),
-          array('Logout', '/logout', false, Laravel\Auth::check()),
-          array('Profile', '#', false, false,
-            array(
-              array('Example 1', '#'),
-              array('Example 2', '#'),
-              array(Navigation::DIVIDER),
-              array(Navigation::HEADER, 'Privacy'),
-              array('Example 1', '#'),
-              array('Example 2', '#'),
-            )
-          )
+          $array_register_menu,
+          $array_usermenu,
         )
-      )
-        ,array('class' => 'pull-right')
+      ),array('class' => 'pull-right')
     )
+
     ->collapsible();
     ?> 
     
@@ -86,8 +134,7 @@
     <script>window.jQuery || document.write('<script src="../../../public/js/jquery-1.8.1.min.js"><\/script>')</script>
     
     {{ Asset::container('bootstrapper')->scripts() }}
-    {{ Bootstrapper\Helpers::inject_activate_js(array('popover','tooltip')) }}
-    <script>window.jQuery || alert('niente jquery');</script>
+    @yield('dynamicscripts')
 
     {{ HTML::script('js/plugins.js') }}
     {{ HTML::script('js/main.js') }}

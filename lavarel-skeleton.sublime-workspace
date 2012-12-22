@@ -1,0 +1,1434 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"A",
+				"Auth	Laravel: Auth::attempt()"
+			],
+			[
+				"array_mer",
+				"array_merge_recursive"
+			],
+			[
+				"with",
+				"with_header  (function)"
+			],
+			[
+				"auto",
+				"autoroute"
+			],
+			[
+				"Na",
+				"Navbar"
+			],
+			[
+				"eleme",
+				"element"
+			],
+			[
+				"elemen",
+				"element"
+			],
+			[
+				"fore",
+				"foreach	foreach …"
+			],
+			[
+				"to_",
+				"to_health"
+			],
+			[
+				"from_",
+				"from_health"
+			],
+			[
+				"bun",
+				"bundle_lang"
+			],
+			[
+				"function",
+				"function_exists"
+			],
+			[
+				"var",
+				"var_export"
+			],
+			[
+				"var_",
+				"var_export"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"debug",
+				"debug_backtrace"
+			],
+			[
+				"get",
+				"getTraceAsString  (function)"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"debug_backtrace",
+				"debug_print_backtrace"
+			],
+			[
+				"Sen",
+				"SentryException  (class)"
+			],
+			[
+				"error",
+				"errors"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"op",
+				"open_secure  (function)"
+			],
+			[
+				"U",
+				"URI"
+			],
+			[
+				"t",
+				"to_route"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/DEV/Laravel/laravel/application/views/home/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 3968,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Modal.php",
+			"settings":
+			{
+				"buffer_size": 8117,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/DEV/Laravel/laravel/application/views/layouts/main.blade.php",
+			"settings":
+			{
+				"buffer_size": 4044,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/DEV/Laravel/laravel/application/views/login.blade.php",
+			"settings":
+			{
+				"buffer_size": 485,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/DEV/Laravel/laravel/application/controllers/login.php",
+			"settings":
+			{
+				"buffer_size": 701,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/DEV/Laravel/laravel/application/views/layouts/simple.blade.php",
+			"settings":
+			{
+				"buffer_size": 2943,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/DEV/Laravel/laravel/application/models/user.php",
+			"settings":
+			{
+				"buffer_size": 265,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/DEV/Laravel/laravel/laravel/tests/application/models/user.php",
+			"settings":
+			{
+				"buffer_size": 21,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 363.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Contro",
+				"Package Control: Add Repository"
+			],
+			[
+				"Package Control:",
+				"Package Control: Discover Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 714.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/DEV/Laravel/laravel/laravel/tests/application/models/user.php",
+		"/C/DEV/Laravel/laravel-ajax-example/application/views/home/index.blade.php",
+		"/C/DEV/Laravel/orchestra/controllers/account.php",
+		"/C/DEV/Laravel/orchestra/controllers/users.php",
+		"/C/DEV/Laravel/laravel-sentry-tutorial/application/controllers/user.php",
+		"/C/DEV/Laravel/laravel/application/config/database.php",
+		"/C/DEV/Laravel/orchestra/models/user.php",
+		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Modal.php",
+		"/C/DEV/Laravel/laravel/application/controllers/base.php",
+		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Helpers.php",
+		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Navigation.php",
+		"/C/DEV/Laravel/laravel/laravel/log.php",
+		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Navbar.php",
+		"/C/DEV/Laravel/laravel/laravel/auth/drivers/eloquent.php",
+		"/C/DEV/Laravel/laravel/laravel/auth.php",
+		"/C/DEV/Laravel/laravel-copy/application/bundles.php",
+		"/C/DEV/Laravel/laravel/application/views/layouts/main.blade.php",
+		"/C/DEV/Laravel/laravel/laravel/routing/controller.php",
+		"/C/DEV/Laravel/laravel/application/controllers/login.php",
+		"/C/DEV/Laravel/laravel/application/views/home/index.blade.php",
+		"/C/DEV/Laravel/laravel/application/routes.php",
+		"/C/DEV/Laravel/laravel/application/views/login.blade.php",
+		"/C/DEV/Laravel/laravel/ide_helper.php",
+		"/C/DEV/Laravel/laravel/bundles/former/src/Former/Former.php",
+		"/C/DEV/Laravel/laravel/bundles/former/src/Former/Fields/Input.php",
+		"/C/DEV/Laravel/laravel/bundles/former/src/Former/Field.php",
+		"/C/DEV/Laravel/laravel/bundles/sentry/sentry.php",
+		"/C/DEV/Laravel/laravel/bundles/authority/ability.php",
+		"/C/DEV/Laravel/laravel/application/config/error.php",
+		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Carousel.php",
+		"/C/DEV/Laravel/laravel/laravel/html.php",
+		"/C/Users/Pasquale/AppData/Roaming/Sublime Text 2/Packages/Twitter Bootstrap Snippets/Javascript Plugins/tooltip.sublime-snippet",
+		"/C/DEV/Laravel/laravel/tasks/generator.php",
+		"/C/DEV/Laravel/laravel/application/config/application.php",
+		"/C/DEV/Laravel/laravel-copy/ide_helper.php",
+		"/C/DEV/Laravel/laravel/application/controllers/home.php",
+		"/C/DEV/Laravel/laravel/bundles/bootstrapper/tests/Navbar.test.php",
+		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Alert.php",
+		"/C/DEV/Laravel/laravel/laravel/response.php",
+		"/C/DEV/Laravel/laravel-copy/application/views/home/index.blade.php",
+		"/C/DEV/Laravel/laravel-copy/application/config/application.php",
+		"/C/DEV/Laravel/laravel-copy/laravel/trace.php",
+		"/C/DEV/Laravel/laravel-copy/laravel/profiling/profiler.php",
+		"/C/DEV/Laravel/laravel-copy/application/tasks/generate.php",
+		"/C/DEV/Laravel/laravel/bundles/bootstrapper/README.md",
+		"/C/DEV/Laravel/laravel/laravel/profiling/template.blade.php",
+		"/C/DEV/Laravel/platform/platform/paths.php",
+		"/C/DEV/Laravel/laravel/laravel/profiling/profiler.php",
+		"/C/DEV/Laravel/laravel/laravel/trace.php",
+		"/C/DEV/Laravel/laravel/bundles/language-builder/libraries/utilities.php",
+		"/C/DEV/Laravel/laravel/bundles/language-builder/libraries/dir.php",
+		"/C/DEV/Laravel/laravel/bundles/language-builder/views/layout.php",
+		"/C/DEV/Laravel/laravel/bundles/language-builder/libraries/compare.php",
+		"/C/DEV/Laravel/laravel/bundles/language-builder/routes.php",
+		"/C/DEV/Laravel/platform/platform/application/controllers/admin.php",
+		"/C/DEV/Laravel/platform/platform/application/platform/core/redirect.php",
+		"/C/DEV/Laravel/platform/platform/application/controllers/authorized.php",
+		"/C/DEV/Laravel/laravel/bundles/swiftmailer/language/en/pagination.php",
+		"/C/DEV/Laravel/laravel/application/language/fr/validation.php",
+		"/C/DEV/Laravel/laravel/laravel/helpers.php",
+		"/C/DEV/Laravel/laravel/laravel/lang.php",
+		"/C/DEV/Laravel/laravel/laravel/bundle.php",
+		"/C/DEV/Laravel/laravel/application/bundles.php",
+		"/C/DEV/Laravel/laravel/paths.php",
+		"/C/DEV/Laravel/laravel/laravel/core.php",
+		"/C/DEV/Laravel/laravel/bundles/language-builder/language/fr/builder.php",
+		"/C/DEV/Laravel/laravel/bundles/language-builder/config/builder.php",
+		"/C/DEV/Laravel/laravel/bundles/language-builder/language/it/builder.php",
+		"/C/DEV/Laravel/laravel/laravel/view.php",
+		"/C/DEV/Laravel/laravel/laravel/error.php",
+		"/C/DEV/Laravel/laravel/laravel/laravel.php",
+		"/C/DEV/Laravel/laravel/laravel/memcached.php",
+		"/C/DEV/Laravel/PHP-CMS/application/controllers/visitor/authorArticles.php",
+		"/C/DEV/Laravel/PHP-CMS/application/controllers/visitor/articlecontent.php",
+		"/C/DEV/Laravel/laravel/laravel/profiling/profiler.css",
+		"/C/DEV/Laravel/firstsite/application/routes.php",
+		"/C/Program Files/Internet Explorer/iexplore.exe",
+		"/C/DEV/Laravel/platform/platform/laravel/routing/controller.php",
+		"/C/DEV/Laravel/platform/platform/laravel/routing/route.php",
+		"/C/DEV/Laravel/platform/platform/laravel/laravel.php",
+		"/C/DEV/Laravel/platform/platform/application/controllers/public.php",
+		"/C/DEV/Laravel/platform/platform/bundles/nesty/nesty.php",
+		"/C/DEV/Laravel/platform/platform/bundles/crud/crud.php",
+		"/C/DEV/Laravel/platform/platform/extensions/platform/settings/migrations/2012_10_15_000000_v1_1_0.php",
+		"/C/DEV/Laravel/platform/platform/extensions/platform/themes/migrations/2012_05_18_013010_v1_0_0.php",
+		"/C/DEV/Laravel/platform/platform/bundles/sentry/migrations/2012_10_08_000000_users_nullable.php",
+		"/C/DEV/Laravel/platform/platform/application/config/application.php",
+		"/C/DEV/Laravel/platform/platform/application/config/error.php",
+		"/C/DEV/Laravel/platform/platform/application/config/database.php",
+		"/C/DEV/Laravel/platform/platform/application/routes.php",
+		"/C/DEV/Laravel/platform/platform/laravel/routing/filter.php",
+		"/C/DEV/Laravel/platform/platform/application/controllers/base.php",
+		"/C/DEV/Laravel/platform/platform/bundles/crud/helpers.php",
+		"/C/DEV/Laravel/platform/platform/application/models/extension.php",
+		"/C/DEV/Laravel/platform/platform/storage/sessions/p8Y34u8ZsMDqee7gIelyDA7dOJ2naoGYB5ibj4jH",
+		"/C/DEV/Laravel/platform/platform/laravel/database/query/grammars/postgres.php",
+		"/C/DEV/Laravel/platform/platform/laravel/database/eloquent/model.php",
+		"/C/DEV/Laravel/platform/platform/laravel/database/query.php",
+		"/C/DEV/Laravel/platform/platform/installer/models/installer.php",
+		"/C/DEV/Laravel/platform/platform/installer/controllers/install.php",
+		"/C/DEV/Laravel/platform/platform/application/platform/platform.php",
+		"/C/DEV/Laravel/platform/platform/application/config/platform.php",
+		"/C/DEV/Laravel/platform/platform/installer/controllers/base.php",
+		"/C/Users/Pasquale/AppData/Roaming/Sublime Text 2/Packages/Xdebug/README.md",
+		"/C/DEV/Laravel/firstsite/bundles/authority/authority.php",
+		"/C/DEV/Laravel/firstsite/bundles/sentry/sentry.php",
+		"/C/DEV/Laravel/firstsite/laravel/auth.php",
+		"/C/DEV/Laravel/firstsite/application/views/registration.blade.php",
+		"/C/DEV/Laravel/firstsite/application/views/login.blade.php",
+		"/C/DEV/Laravel/firstsite/application/bundles.php",
+		"/C/DEV/Laravel/firstsite/bundles/lara_admin/lara_admin.php",
+		"/C/DEV/Laravel/firstsite/bundles/modelo/config/modelo.php",
+		"/C/DEV/Laravel/firstsite/application/config/application.php",
+		"/C/DEV/Laravel/firstsite/laravel/auth/drivers/driver.php",
+		"/C/DEV/Laravel/firstsite/bundles/sentry/config/sentry.php",
+		"/C/DEV/Laravel/firstsite/laravel/view.php",
+		"/C/DEV/Laravel/firstsite/laravel/autoloader.php",
+		"/C/DEV/Laravel/firstsite/laravel/routing/route.php",
+		"/C/DEV/Laravel/firstsite/laravel/laravel.php",
+		"/C/DEV/Laravel/firstsite/laravel/response.php",
+		"/C/DEV/Laravel/firstsite/laravel/routing/router.php",
+		"/C/DEV/Laravel/firstsite/laravel/url.php",
+		"/C/DEV/Laravel/firstsite/helpers.php",
+		"/C/DEV/Laravel/firstsite/laravel/config.php",
+		"/C/DEV/Laravel/firstsite/public/index.php",
+		"/C/DEV/Laravel/firstsite/laravel/database/eloquent/query.php",
+		"/C/DEV/Laravel/firstsite/laravel/database/eloquent/pivot.php",
+		"/C/Users/Pasquale/AppData/Roaming/Sublime Text 2/Packages/Xdebug/Xdebug.sublime-settings"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\DEV\\Laravel\\laravel\\bundles\\bootstrapper\\src\\Bootstrapper",
+			"C:\\DEV\\Laravel\\laravel\\bundles\\former\\src\\Former",
+			"C:\\DEV\\Laravel\\laravel",
+			"C:\\DEV\\Laravel\\platform\\platform",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Navbar",
+			"popover",
+			",",
+			"\\\\",
+			"=>",
+			"'",
+			"bootstrap",
+			"useFramework",
+			"die",
+			"scandir",
+			"missing",
+			"',').')';",
+			"trace",
+			"anbu-log",
+			"Crud",
+			"before_update",
+			"insert_get_id",
+			"RETURNING",
+			"(\"vendor\", \"extension\", \"version\", \"enabled\")",
+			"get_step_1",
+			"login",
+			"docs",
+			"csrf",
+			"Docs",
+			"Do",
+			"docs",
+			"has",
+			"json_decode"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Modal",
+			"{}",
+			"\\",
+			"extends",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/DEV/Laravel/laravel/application/views/home/index.blade.php",
+					"settings":
+					{
+						"buffer_size": 3968,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1385,
+								1385
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "php"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby",
+								"php": "php"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Laravel-Blade/Blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 220.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Modal.php",
+					"settings":
+					{
+						"buffer_size": 8117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8012,
+								8012
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "php"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby",
+								"php": "php"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5295.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/DEV/Laravel/laravel/application/views/layouts/main.blade.php",
+					"settings":
+					{
+						"buffer_size": 4044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2204,
+								2204
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "php"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby",
+								"php": "php"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Laravel-Blade/Blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 440.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/DEV/Laravel/laravel/application/views/login.blade.php",
+					"settings":
+					{
+						"buffer_size": 485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								113
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "php"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby",
+								"php": "php"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Laravel-Blade/Blade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/DEV/Laravel/laravel/application/controllers/login.php",
+					"settings":
+					{
+						"buffer_size": 701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								541,
+								541
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "php"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby",
+								"php": "php"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/DEV/Laravel/laravel/application/views/layouts/simple.blade.php",
+					"settings":
+					{
+						"buffer_size": 2943,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1910,
+								1910
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "php"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby",
+								"php": "php"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Laravel-Blade/Blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 570.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/DEV/Laravel/laravel/application/models/user.php",
+					"settings":
+					{
+						"buffer_size": 265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								264,
+								264
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "php"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby",
+								"php": "php"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/DEV/Laravel/laravel/laravel/tests/application/models/user.php",
+					"settings":
+					{
+						"buffer_size": 21,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								7
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "php"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby",
+								"php": "php"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.unsaved_changes":
+	{
+		"height": 118.0
+	},
+	"output.xdebug_inspect":
+	{
+		"height": 128.0
+	},
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"response/json",
+				"laravel/vendor/Symfony/Component/Console/composer.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Pasquale/AppData/Roaming/Sublime Text 2/Packages/Xdebug/platform.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 264.0,
+	"status_bar_visible": true
+}
