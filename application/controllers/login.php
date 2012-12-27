@@ -2,7 +2,6 @@
 
 class Login_Controller extends Base_Controller 
 {
-
 	//public $layout = 'layouts.main';
 	//public $restful = true;
 	/**
@@ -24,6 +23,10 @@ class Login_Controller extends Base_Controller
 
 	public function post_newuser($action = null)
 	{
+		$date = DateTime::createFromFormat(Base_Controller::PRESENTED_DATE_FORMAT, Input::get('birthdate'));
+		//dd($date->format(Base_Controller::STORED_DATE_FORMAT));
+		Input::merge(array('birthdate'=>$date->format(Base_Controller::STORED_DATE_FORMAT)));
+		//dd(Input::all());
 		$rules = array(
 			'first_name' => 'required',
 			'last_name' => 'required',
@@ -35,6 +38,7 @@ class Login_Controller extends Base_Controller
 	    $validation = Validator::make(Input::all(), $rules);
 	    if ($validation->fails())
 	    {
+			Input::merge(array('birthdate'=>$date->format(Base_Controller::PRESENTED_DATE_FORMAT)));
 	    	Input::flash();
 	        return Redirect::to('login/newuser')->with_errors($validation)->with_input();
 	    }
@@ -47,7 +51,7 @@ class Login_Controller extends Base_Controller
 
 		$profile = array(
 			'first_name' => Input::get('first_name'), 
-			'birth_date' => Input::get('birthdate'),
+			'birth_date' => $date->format(Base_Controller::STORED_DATE_FORMAT),
 			'last_name' => Input::get('last_name')
 			);
 		$user->profile()->insert($profile);

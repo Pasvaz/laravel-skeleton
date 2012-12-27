@@ -98,3 +98,6 @@
 			</div>
 		</div>
 @endsection
+@section('dynamicscripts')
+{{Bootstrapper\Javascripter::write_javascript()}}
+@endsection

@@ -1,6 +1,6 @@
 @layout('layouts.main')
 @section('content')
-<?
+<? //dd($User->profile);
 $tab = Bootstrapper\Tabbable::tabs_left(
   array(
     //array('label'=>Navigation::HEADER, 'url' => 'Sections'),
