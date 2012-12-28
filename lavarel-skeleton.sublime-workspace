@@ -148,7 +148,7 @@
 			}
 		},
 		{
-			"file": "/C/DEV/Laravel/laravel/application/views/layouts/simple.blade.php",
+			"file": "/C/DEV/Laravel/laravel-skeleton/application/views/layouts/simple.blade.php",
 			"settings":
 			{
 				"buffer_size": 2943,
@@ -156,7 +156,7 @@
 			}
 		},
 		{
-			"file": "/C/DEV/Laravel/laravel/application/models/user.php",
+			"file": "/C/DEV/Laravel/laravel-skeleton/application/models/user.php",
 			"settings":
 			{
 				"buffer_size": 265,
@@ -164,7 +164,7 @@
 			}
 		},
 		{
-			"file": "/C/DEV/Laravel/laravel/laravel/tests/application/models/user.php",
+			"file": "/C/DEV/Laravel/laravel-skeleton/laravel/tests/application/models/user.php",
 			"settings":
 			{
 				"buffer_size": 21,
@@ -216,81 +216,81 @@
 	},
 	"file_history":
 	[
-		"/C/DEV/Laravel/laravel/laravel/tests/application/models/user.php",
-		"/C/DEV/Laravel/laravel-ajax-example/application/views/home/index.blade.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/tests/application/models/user.php",
+		"/C/DEV/Laravel/laravel-skeleton-ajax-example/application/views/home/index.blade.php",
 		"/C/DEV/Laravel/orchestra/controllers/account.php",
 		"/C/DEV/Laravel/orchestra/controllers/users.php",
-		"/C/DEV/Laravel/laravel-sentry-tutorial/application/controllers/user.php",
-		"/C/DEV/Laravel/laravel/application/config/database.php",
+		"/C/DEV/Laravel/laravel-skeleton-sentry-tutorial/application/controllers/user.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/config/database.php",
 		"/C/DEV/Laravel/orchestra/models/user.php",
-		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Modal.php",
-		"/C/DEV/Laravel/laravel/application/controllers/base.php",
-		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Helpers.php",
-		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Navigation.php",
-		"/C/DEV/Laravel/laravel/laravel/log.php",
-		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Navbar.php",
-		"/C/DEV/Laravel/laravel/laravel/auth/drivers/eloquent.php",
-		"/C/DEV/Laravel/laravel/laravel/auth.php",
-		"/C/DEV/Laravel/laravel-copy/application/bundles.php",
-		"/C/DEV/Laravel/laravel/application/views/layouts/main.blade.php",
-		"/C/DEV/Laravel/laravel/laravel/routing/controller.php",
-		"/C/DEV/Laravel/laravel/application/controllers/login.php",
-		"/C/DEV/Laravel/laravel/application/views/home/index.blade.php",
-		"/C/DEV/Laravel/laravel/application/routes.php",
-		"/C/DEV/Laravel/laravel/application/views/login.blade.php",
-		"/C/DEV/Laravel/laravel/ide_helper.php",
-		"/C/DEV/Laravel/laravel/bundles/former/src/Former/Former.php",
-		"/C/DEV/Laravel/laravel/bundles/former/src/Former/Fields/Input.php",
-		"/C/DEV/Laravel/laravel/bundles/former/src/Former/Field.php",
-		"/C/DEV/Laravel/laravel/bundles/sentry/sentry.php",
-		"/C/DEV/Laravel/laravel/bundles/authority/ability.php",
-		"/C/DEV/Laravel/laravel/application/config/error.php",
-		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Carousel.php",
-		"/C/DEV/Laravel/laravel/laravel/html.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/bootstrapper/src/Bootstrapper/Modal.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/controllers/base.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/bootstrapper/src/Bootstrapper/Helpers.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/bootstrapper/src/Bootstrapper/Navigation.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/log.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/bootstrapper/src/Bootstrapper/Navbar.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/auth/drivers/eloquent.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/auth.php",
+		"/C/DEV/Laravel/laravel-skeleton-copy/application/bundles.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/views/layouts/main.blade.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/routing/controller.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/controllers/login.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/views/home/index.blade.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/routes.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/views/login.blade.php",
+		"/C/DEV/Laravel/laravel-skeleton/ide_helper.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/former/src/Former/Former.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/former/src/Former/Fields/Input.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/former/src/Former/Field.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/sentry/sentry.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/authority/ability.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/config/error.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/bootstrapper/src/Bootstrapper/Carousel.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/html.php",
 		"/C/Users/Pasquale/AppData/Roaming/Sublime Text 2/Packages/Twitter Bootstrap Snippets/Javascript Plugins/tooltip.sublime-snippet",
-		"/C/DEV/Laravel/laravel/tasks/generator.php",
-		"/C/DEV/Laravel/laravel/application/config/application.php",
-		"/C/DEV/Laravel/laravel-copy/ide_helper.php",
-		"/C/DEV/Laravel/laravel/application/controllers/home.php",
-		"/C/DEV/Laravel/laravel/bundles/bootstrapper/tests/Navbar.test.php",
-		"/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Alert.php",
-		"/C/DEV/Laravel/laravel/laravel/response.php",
-		"/C/DEV/Laravel/laravel-copy/application/views/home/index.blade.php",
-		"/C/DEV/Laravel/laravel-copy/application/config/application.php",
-		"/C/DEV/Laravel/laravel-copy/laravel/trace.php",
-		"/C/DEV/Laravel/laravel-copy/laravel/profiling/profiler.php",
-		"/C/DEV/Laravel/laravel-copy/application/tasks/generate.php",
-		"/C/DEV/Laravel/laravel/bundles/bootstrapper/README.md",
-		"/C/DEV/Laravel/laravel/laravel/profiling/template.blade.php",
+		"/C/DEV/Laravel/laravel-skeleton/tasks/generator.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/config/application.php",
+		"/C/DEV/Laravel/laravel-skeleton-copy/ide_helper.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/controllers/home.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/bootstrapper/tests/Navbar.test.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/bootstrapper/src/Bootstrapper/Alert.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/response.php",
+		"/C/DEV/Laravel/laravel-skeleton-copy/application/views/home/index.blade.php",
+		"/C/DEV/Laravel/laravel-skeleton-copy/application/config/application.php",
+		"/C/DEV/Laravel/laravel-skeleton-copy/laravel/trace.php",
+		"/C/DEV/Laravel/laravel-skeleton-copy/laravel/profiling/profiler.php",
+		"/C/DEV/Laravel/laravel-skeleton-copy/application/tasks/generate.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/bootstrapper/README.md",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/profiling/template.blade.php",
 		"/C/DEV/Laravel/platform/platform/paths.php",
-		"/C/DEV/Laravel/laravel/laravel/profiling/profiler.php",
-		"/C/DEV/Laravel/laravel/laravel/trace.php",
-		"/C/DEV/Laravel/laravel/bundles/language-builder/libraries/utilities.php",
-		"/C/DEV/Laravel/laravel/bundles/language-builder/libraries/dir.php",
-		"/C/DEV/Laravel/laravel/bundles/language-builder/views/layout.php",
-		"/C/DEV/Laravel/laravel/bundles/language-builder/libraries/compare.php",
-		"/C/DEV/Laravel/laravel/bundles/language-builder/routes.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/profiling/profiler.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/trace.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/language-builder/libraries/utilities.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/language-builder/libraries/dir.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/language-builder/views/layout.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/language-builder/libraries/compare.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/language-builder/routes.php",
 		"/C/DEV/Laravel/platform/platform/application/controllers/admin.php",
 		"/C/DEV/Laravel/platform/platform/application/platform/core/redirect.php",
 		"/C/DEV/Laravel/platform/platform/application/controllers/authorized.php",
-		"/C/DEV/Laravel/laravel/bundles/swiftmailer/language/en/pagination.php",
-		"/C/DEV/Laravel/laravel/application/language/fr/validation.php",
-		"/C/DEV/Laravel/laravel/laravel/helpers.php",
-		"/C/DEV/Laravel/laravel/laravel/lang.php",
-		"/C/DEV/Laravel/laravel/laravel/bundle.php",
-		"/C/DEV/Laravel/laravel/application/bundles.php",
-		"/C/DEV/Laravel/laravel/paths.php",
-		"/C/DEV/Laravel/laravel/laravel/core.php",
-		"/C/DEV/Laravel/laravel/bundles/language-builder/language/fr/builder.php",
-		"/C/DEV/Laravel/laravel/bundles/language-builder/config/builder.php",
-		"/C/DEV/Laravel/laravel/bundles/language-builder/language/it/builder.php",
-		"/C/DEV/Laravel/laravel/laravel/view.php",
-		"/C/DEV/Laravel/laravel/laravel/error.php",
-		"/C/DEV/Laravel/laravel/laravel/laravel.php",
-		"/C/DEV/Laravel/laravel/laravel/memcached.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/swiftmailer/language/en/pagination.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/language/fr/validation.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/helpers.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/lang.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/bundle.php",
+		"/C/DEV/Laravel/laravel-skeleton/application/bundles.php",
+		"/C/DEV/Laravel/laravel-skeleton/paths.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/core.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/language-builder/language/fr/builder.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/language-builder/config/builder.php",
+		"/C/DEV/Laravel/laravel-skeleton/bundles/language-builder/language/it/builder.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/view.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/error.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/laravel.php",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/memcached.php",
 		"/C/DEV/Laravel/PHP-CMS/application/controllers/visitor/authorArticles.php",
 		"/C/DEV/Laravel/PHP-CMS/application/controllers/visitor/articlecontent.php",
-		"/C/DEV/Laravel/laravel/laravel/profiling/profiler.css",
+		"/C/DEV/Laravel/laravel-skeleton/laravel/profiling/profiler.css",
 		"/C/DEV/Laravel/firstsite/application/routes.php",
 		"/C/Program Files/Internet Explorer/iexplore.exe",
 		"/C/DEV/Laravel/platform/platform/laravel/routing/controller.php",
@@ -421,7 +421,7 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/DEV/Laravel/laravel/application/views/home/index.blade.php",
+					"file": "/C/DEV/Laravel/laravel-skeleton/application/views/home/index.blade.php",
 					"settings":
 					{
 						"buffer_size": 3968,
@@ -538,7 +538,7 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/C/DEV/Laravel/laravel/bundles/bootstrapper/src/Bootstrapper/Modal.php",
+					"file": "/C/DEV/Laravel/laravel-skeleton/bundles/bootstrapper/src/Bootstrapper/Modal.php",
 					"settings":
 					{
 						"buffer_size": 8117,
@@ -656,7 +656,7 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/C/DEV/Laravel/laravel/application/views/layouts/main.blade.php",
+					"file": "/C/DEV/Laravel/laravel-skeleton/application/views/layouts/main.blade.php",
 					"settings":
 					{
 						"buffer_size": 4044,
@@ -774,7 +774,7 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/C/DEV/Laravel/laravel/application/views/login.blade.php",
+					"file": "/C/DEV/Laravel/laravel-skeleton/application/views/login.blade.php",
 					"settings":
 					{
 						"buffer_size": 485,
@@ -890,7 +890,7 @@
 				},
 				{
 					"buffer": 4,
-					"file": "/C/DEV/Laravel/laravel/application/controllers/login.php",
+					"file": "/C/DEV/Laravel/laravel-skeleton/application/controllers/login.php",
 					"settings":
 					{
 						"buffer_size": 701,
@@ -1006,7 +1006,7 @@
 				},
 				{
 					"buffer": 5,
-					"file": "/C/DEV/Laravel/laravel/application/views/layouts/simple.blade.php",
+					"file": "/C/DEV/Laravel/laravel-skeleton/application/views/layouts/simple.blade.php",
 					"settings":
 					{
 						"buffer_size": 2943,
@@ -1124,7 +1124,7 @@
 				},
 				{
 					"buffer": 6,
-					"file": "/C/DEV/Laravel/laravel/application/models/user.php",
+					"file": "/C/DEV/Laravel/laravel-skeleton/application/models/user.php",
 					"settings":
 					{
 						"buffer_size": 265,
@@ -1240,7 +1240,7 @@
 				},
 				{
 					"buffer": 7,
-					"file": "/C/DEV/Laravel/laravel/laravel/tests/application/models/user.php",
+					"file": "/C/DEV/Laravel/laravel-skeleton/laravel/tests/application/models/user.php",
 					"settings":
 					{
 						"buffer_size": 21,
