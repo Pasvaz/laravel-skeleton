@@ -20,10 +20,10 @@ echo Former::horizontal_open()
 {{Former::text("last_name", __('user.last_name'))->appendIcon('aw_group')}}
 {{Former::append("email", "Email")->with_labeled_icon('email', 'icon-envelope')}}
 
-<? $dpicker_attr=Bootstrapper\Datepicker::create('birthdate')->with_language('it')->with_options("startView:2, autoclose:1")->with_format(Base_Controller::PRESENTED_FORMAT)->get_attributes();
+<? $dpicker_attr=Bootstrapper\Datepicker::create('birthdate')->with_language('it')->with_options("startView:2, autoclose:1")->with_format(Base_Controller::PRESENTED_DATE_FORMAT)->get_attributes();
 echo Former::append("birthdate", __('user.birth_date'), $dpicker_attr['data-date'], $dpicker_attr)->with_labeled_icon('birthdate', 'icon-calendar')?>
-{{Former::password("password", 'Password')->appendIcon('aw_key')}}
 
+{{Former::password("password", 'Password')->appendIcon('aw_key')}}
 <? echo \Former::actions (
     Former::primary_submit('Signup'),
     Former::reset('Reset')

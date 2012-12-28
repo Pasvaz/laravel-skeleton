@@ -94,22 +94,14 @@ Route::filter('before', function()
 {
 	if( !Session::get('language') ) {
 		//Log::info('Session misses lang');
-
 		$accepted_languages = array('en', 'it');
 		$user_language = 'en';
-		// if ( Auth::check() ) {
-		// 	if ( in_array(Auth::user()->idioma, $accepted_languages) ) {
-		//    		$user_language = Auth::user()->idioma;
-		//    	}
-		//    }
 		Session::put('language', $user_language);
-		//Log::info('Session now is '.$user_language);
 	} else {
 		$user_language = Session::get('language');
-		//Log::info('Session has '.$user_language);
 	}
 
-		//Log::info('Config has '.Config::get('application.language'));
+	//Log::info('Config has '.Config::get('application.language'));
 	Config::set('application.language', $user_language);
 	//Log::success('Ends '.$user_language);
 });

@@ -47,12 +47,13 @@ class Login_Controller extends Base_Controller
 		$user->email = Input::get('email');
 		$user->password = Input::get('password');
 		$user->name = Input::get('first_name').' '.Input::get('last_name');
+		$user->language = Config::get('application.language');
 		$user->save();
 
 		$profile = array(
 			'first_name' => Input::get('first_name'), 
+			'last_name' => Input::get('last_name'),
 			'birth_date' => $date->format(Base_Controller::STORED_DATE_FORMAT),
-			'last_name' => Input::get('last_name')
 			);
 		$user->profile()->insert($profile);
 		return Redirect::to('home');
@@ -87,6 +88,8 @@ class Login_Controller extends Base_Controller
 	    }
 
 		if (Auth::attempt(array('username' => Input::get('email'), 'password' => Input::get('password')))){
+			Auth::user()->last_login=new \DateTime;
+			if (Auth::user()->profile->language) Session::put('language', Auth::user()->profile->language);
 			$logged_name = Auth::user()->profile->first_name;
 			return Redirect::home()->with('logged_name', $logged_name);
 		}

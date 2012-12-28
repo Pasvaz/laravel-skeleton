@@ -23,7 +23,7 @@
 
 $environments = array(
 
-	'local' => array('http://localhost*', '*.dev'),
+	'local' => array('http://localhost*', 'http://127.0.0.1*','https://127.0.0.1*', '*.dev'),
 
 );
 

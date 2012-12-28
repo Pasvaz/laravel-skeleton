@@ -15,11 +15,12 @@ class Create_User {
 			$table->string('name');
 			$table->string('email')->unique();
 			$table->string('password');
-			$table->string('remember_me')->nullable();
+			$table->boolean('remember_me')->nullable();
 			$table->string('activation_hash')->nullable();
 			$table->string('ip_address')->nullable();
 			$table->string('activated')->nullable();
 			$table->text('permissions')->nullable();
+			$table->string('language')->nullable();
 			$table->timestamp('last_login')->nullable();
 			$table->timestamps();
 		});
