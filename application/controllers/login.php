@@ -59,6 +59,7 @@ class Login_Controller extends Base_Controller
 		return Redirect::to('home');
 	}
 
+	// Login get
 	public function get_index($action = 'page')
 	{
 		//echo(var_export($this->layout, true).'<br>');
@@ -74,6 +75,7 @@ class Login_Controller extends Base_Controller
 		//return View::make('user.login');
 	}
 
+	// Login post
 	public function post_index()
 	{
 	    $rules = array(
@@ -89,7 +91,8 @@ class Login_Controller extends Base_Controller
 
 		if (Auth::attempt(array('username' => Input::get('email'), 'password' => Input::get('password')))){
 			Auth::user()->last_login=new \DateTime;
-			if (Auth::user()->profile->language) Session::put('language', Auth::user()->profile->language);
+			Auth::user()->save();
+			if (Auth::user()->language) Session::put('language', Auth::user()->language);
 			$logged_name = Auth::user()->profile->first_name;
 			return Redirect::home()->with('logged_name', $logged_name);
 		}

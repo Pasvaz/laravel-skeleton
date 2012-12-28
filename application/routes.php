@@ -129,8 +129,10 @@ Route::get('language/(:num)', function($lang)
 	$user_language=$langarray[$lang];
 	Config::set('application.language', $user_language);
 	Session::put('language', $user_language);
-	//Log::success('Setting '.$user_language);
-	//Log::success('getting '.Session::get('language'));
+	if (Auth::user() and Auth::user()->language) {
+		Auth::user()->language=$user_language;
+		Auth::user()->save();
+	}
 	return Redirect::home();
 });
 

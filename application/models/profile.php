@@ -2,6 +2,8 @@
 
 class Profile extends Eloquent 
 {
+	public static $key = 'user_id';
+
 	/**
 	 * Belongs to `user` table.
 	 *
