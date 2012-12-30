@@ -92,17 +92,24 @@ Event::listen('500', function()
 
 Route::filter('before', function()
 {
+	// USER LANGUAGE
 	if( !Session::get('language') ) {
-		//Log::info('Session misses lang');
 		$accepted_languages = array('en', 'it');
 		$user_language = 'en';
+
+		$browserlang = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+		if (isset($browserlang)) {
+            $user_language = substr($browserlang, 0, 2);
+        }
+
+		if (!in_array($user_language, $accepted_languages)) $user_language = 'en';
 		Session::put('language', $user_language);
 	} else {
 		$user_language = Session::get('language');
 	}
 
-	//Log::info('Config has '.Config::get('application.language'));
 	Config::set('application.language', $user_language);
+	Locale::setDefault($user_language);
 	//Log::success('Ends '.$user_language);
 });
 

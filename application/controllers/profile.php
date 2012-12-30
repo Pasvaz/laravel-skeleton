@@ -22,9 +22,23 @@ class Profile_Controller extends Authenticated_Controller
 		return $this->layout->nest('content', 'user.profile', array('User' => $withUser, 'Friends'=>$users));
 	}
 
-	public function post_livedit()
+	public function get_livedit()
 	{
+		$data=new DateTime();
+		$locale='it-it';
+		$fmt = new IntlDateFormatter($locale, IntlDateFormatter::SHORT, IntlDateFormatter::NONE );
+		echo $fmt->format($data).'<br>';
+		echo 'pattern is '. $fmt->getPattern ().'<br>';
+
+		$locale='it_CH';
+		$fmt = new IntlDateFormatter($locale, IntlDateFormatter::SHORT, IntlDateFormatter::SHORT);
+		echo $fmt->format($data).'<br>';
+		echo 'pattern '. $fmt->getPattern ().'<br>';
+		
+		$locale='en-US';
+		$fmt = new IntlDateFormatter($locale, IntlDateFormatter::SHORT, IntlDateFormatter::SHORT);
+		echo $fmt->format($data).'<br>';
+		echo 'pattern '. $fmt->getPattern ().'<br>';
 		die('NO');
 	}
-
 }

@@ -18,6 +18,8 @@ class Login_Controller extends Base_Controller
 
 	public function get_newuser($action = null)
 	{
+		//$fmt = new IntlDateFormatter('az', IntlDateFormatter::FULL, IntlDateFormatter::NONE );
+		//return $fmt->getPattern();
 		return View::make('user.register');
 	}
 
