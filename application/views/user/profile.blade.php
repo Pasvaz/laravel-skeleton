@@ -38,7 +38,7 @@ $tab = Bootstrapper\Tabbable::tabs_left(
             </tr>
             <tr>
               <th>{{__('user.birth_date')}}</th>
-              <td>{{$User->profile->birth_date}}</td>
+              <td>{{$User->profile->long_birth_date}}</td>
             </tr>
           </tbody>
         </table>

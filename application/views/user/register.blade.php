@@ -14,31 +14,26 @@ echo Former::horizontal_open()
   ->secure()
   ->rules($rules)
   ->method('POST');
-  ?>
+?>
 {{Former::token();}}
-{{Former::text("first_name", __('user.first_name'))->appendIcon('aw_user')}}
-{{Former::text("last_name", __('user.last_name'))->appendIcon('aw_group')}}
-{{Former::append("email", "Email")->with_labeled_icon('email', 'icon-envelope')}}
+{{Former::text("first_name", 'user.first_name')->appendIcon('aw_user')}}
+{{Former::text("last_name", 'user.last_name')->appendIcon('aw_group')}}
+{{Former::text("email", "Email")->appendIcon('envelope')}}
 
 <?
-$fmt = new IntlDateFormatter(Locale::getDefault(), IntlDateFormatter::SHORT, IntlDateFormatter::NONE );
-$fmt = new IntlDateFormatter('ar', IntlDateFormatter::FULL, IntlDateFormatter::NONE );
+$fmt = new Localized_Date(new DateTime(), null, IntlDateFormatter::SHORT, IntlDateFormatter::NONE );
 //dd($fmt->getPattern());
-$jsfmt = getJavascriptPattern($fmt);
-$jsfmt = $fmt->getPattern();
-$jsfmt = 'yy-m-d';
-echo $fmt->getPattern().'<br>';
-echo $jsfmt;
+$jsfmt = $fmt->getDatepickerPattern();
+echo $fmt->datepicker_format.'<br>';
 //$fmt->setPattern($jsfmt);
 $dpicker_attr=Bootstrapper\Datepicker::create('birthdate')->
               with_language(Session::get('language'))->
               with_options("startView:2, autoclose:1")->
               with_format($jsfmt)->
-              with_date(date($jsfmt))->
+              with_date($fmt->getDatepickerDate())->
               get_attributes();
-echo Former::append("birthdate", __('user.birth_date'), $dpicker_attr['data-date'], $dpicker_attr)->with_labeled_icon('birthdate', 'icon-calendar')?>
-<?echo $fmt->getPattern().'<br>';?>
-<?echo getJavascriptPattern($fmt);?>
+echo Former::append("birthdate", 'user.birth_date', $dpicker_attr['data-date'], $dpicker_attr)->with_labeled_icon('birthdate', 'icon-calendar')?>
+{{Former::hidden("birthdate_format", $fmt->getDatePattern())}}
 {{Former::password("password", 'Password')->appendIcon('aw_key')}}
 <? echo \Former::actions (
     Former::primary_submit('Signup'),
@@ -56,62 +51,3 @@ testing a tooltip {{Bootstrapper\Tooltip::create('HERE', 'Tooltip Title', 'This 
 {{ Asset::container('bootstrapper-datepicker')->styles() }}
 {{Bootstrapper\Javascripter::write_javascript()}}
 @endsection
-<?
-/**
-* Create pattern Date Javascript
-*
-* @param IntlDateFormatter $formatter
-*
-* @return string pattern date of Javascript
-*/
-    function getJavascriptPattern(\IntlDateFormatter $formatter)
-    {
-        $pattern = $formatter->getPattern();
-        $patterns = preg_split('([\\\/.:_;,\s-\ ]{1})', $pattern);
-        $exits = array();
-
-        // Transform pattern for JQuery ui datepicker
-        foreach ($patterns as $index => $val) {
-            switch ($val) {
-                case 'yy':
-                    $exits[$val] = 'y';
-                    break;
-                case 'y':
-                case 'yyyy':
-                    $exits[$val] = 'yy';
-                    break;
-                case 'M':
-                    $exits[$val] = 'm';
-                    break;
-                case 'MM':
-                case 'L':
-                case 'LL':
-                    $exits[$val] = 'mm';
-                    break;
-                case 'MMM':
-                case 'LLL':
-                    $exits[$val] = 'M';
-                    break;
-                case 'MMMM':
-                case 'LLLL':
-                    $exits[$val] = 'MM';
-                    break;
-                case 'D':
-                    $exits[$val] = 'o';
-                    break;
-                case 'E':
-                case 'EE':
-                case 'EEE':
-                case 'eee':
-                    $exits[$val] = 'D';
-                    break;
-                case 'EEEE':
-                case 'eeee':
-                    $exits[$val] = 'DD';
-                    break;
-            }
-        }
-
-        return str_replace(array_keys($exits), array_values($exits), $pattern);
-    }
-?>
