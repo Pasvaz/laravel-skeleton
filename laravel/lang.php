@@ -24,6 +24,13 @@ class Lang {
 	protected $language;
 
 	/**
+	 * The fallback language.
+	 *
+	 * @var string
+	 */
+	protected $fallback_language;
+
+	/**
 	 * All of the loaded language lines.
 	 *
 	 * The array is keyed by [$bundle][$language][$file].
@@ -52,6 +59,11 @@ class Lang {
 		$this->key = $key;
 		$this->language = $language;
 		$this->replacements = (array) $replacements;
+		$fallback_language = Config::get('application.fallback_language');
+		if (!is_null($fallback_language) and !empty($fallback_language))
+		{
+			$this->fallback_language = $fallback_language;
+		}
 	}
 
 	/**
@@ -112,12 +124,14 @@ class Lang {
 	 */
 	public function get($language = null, $default = null)
 	{
+//dd(lang_debug_backtrace());
 		// If no default value is specified by the developer, we'll just return the
 		// key of the language line. This should indicate which language line we
 		// were attempting to render and is better than giving nothing back.
 		if (is_null($default)) $default = $this->key;
 
 		if (is_null($language)) $language = $this->language;
+		Log::lang_debug('Getting '.$this->key.' in language: '.$language.' with default: '.$default);
 
 		list($bundle, $file, $line) = $this->parse($this->key);
 
@@ -126,12 +140,35 @@ class Lang {
 		// file exists and that file does not actually contain any lines.
 		if ( ! static::load($bundle, $language, $file))
 		{
-			return value($default);
+			if (!is_null($this->fallback_language) 
+				and $this->fallback_language != $language)
+			{
+				Log::lang_debug('Looking for '.$this->key.' but file not exists:'.$bundle.'\\'. $language.'\\'. $file. ' loading fallback '.$this->fallback_language);
+				return $this->get($this->fallback_language, $default);
+			}
+			else
+			{
+				Log::lang_debug('Looking for '.$this->key.' but file not exists:'.$bundle.'\\'. $language.'\\'. $file. ' returning default value: '.$default);
+				return value($default);
+			}
 		}
 
 		$lines = static::$lines[$bundle][$language][$file];
+		//Log::lang_debug('loaded lines: '.var_export($lines, true));
 
-		$line = array_get($lines, $line, $default);
+		if (! array_key_exists($line, $lines) 
+			and !is_null($this->fallback_language) 
+			and $this->fallback_language != $language)
+		{
+			Log::lang_debug($line.' not found in '.$language.', getting fallback in '.$this->fallback_language);
+			return $this->get($this->fallback_language, $default);
+		}
+		else
+		{
+//dd(lang_debug_backtrace());
+			//dd('got the line in '.((array_key_exists($line, $lines))?'si':'no').' fall '.$this->fallback_language);
+			$line = array_get($lines, $line, $default);
+		}
 
 		// If the line is not a string, it probably means the developer asked for
 		// the entire language file and the value of the requested value will be
@@ -144,6 +181,7 @@ class Lang {
 			}
 		}
 
+		Log::lang_debug('Returning '.$line.' in '.$language);
 		return $line;
 	}
 
@@ -188,6 +226,7 @@ class Lang {
 	{
 		if (isset(static::$lines[$bundle][$language][$file]))
 		{
+			//Log::lang_debug('Cached '.var_export(static::$lines[$bundle][$language][$file], true));
 			return true;
 		}
 

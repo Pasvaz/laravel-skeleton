@@ -2,6 +2,8 @@
 
 return array(
 
+	'site-name'=>'Skeleton',
+
 	/*
 	|--------------------------------------------------------------------------
 	| Application URL
@@ -93,6 +95,18 @@ return array(
 	*/
 
 	'language' => 'en',
+
+	/*
+	|--------------------------------------------------------------------------
+	| Fallback Language
+	|--------------------------------------------------------------------------
+	|
+	| This language will be used by Lang library when the default language
+	| misses the translation.
+	|
+	*/
+
+	'fallback_language' => 'en',
 
 	/*
 	|--------------------------------------------------------------------------
