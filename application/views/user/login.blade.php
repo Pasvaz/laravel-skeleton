@@ -1,7 +1,14 @@
 @layout('layouts.main')
 @section('content')
-
-<?$bs=Former::Framework('bootstrap');?>
+<? //echo __('user.user_not_activated');?>
+<?if ($errors->has('user'))
+{
+	if ($errors->has('alert_success')) $alert = Alert::success($errors->first('user'))->block();
+	else if ($errors->has('alert_warning')) $alert = Alert::warning($errors->first('user'))->block();
+	else $alert = Alert::error($errors->first('user'))->block();
+	echo $alert;
+}
+?>
 <? echo Former::horizontal_open()
   ->id('MyForm')
   ->secure()
