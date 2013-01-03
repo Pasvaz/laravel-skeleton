@@ -61,25 +61,7 @@
 
     // Navigation Bar
     echo Bootstrapper\Navbar::inverse(null, Navbar::FIX_TOP)
-    ->with_brand('Skeleton', '#')
-
-/*
-    ->with_menus(
-      '<ul class="pull-right nav"><li>'.
-      Former::open_inline('/language', 'GET', array('class'=>'navbar-search pull-right')).
-      Former::select('language', '', array('Italiano', 'English'), 'Italiano', array('class'=>'search-query span2')).
-      Former::mini_submit('change', array('Italiano', 'English'), 'Italiano', array('class'=>'search-query span2')).
-      '</form>'.
-      '</li></ul>'
-      )
-
-*/
-/*  Search Box
-    ->with_menus(
-      '<form class="navbar-search pull-right" action="">
-        <input type="text" class="search-query span2" placeholder="Search">
-      </form>')
-*/
+    ->with_brand(Config::get('application.site-name'), '#')
 
     ->with_menus(
       array(Navigation::link(Config::get('application.language', 'en'), '#', false, false, 
