@@ -3,6 +3,7 @@
 class Profile extends Eloquent 
 {
 	public static $key = 'user_id';
+	public static $timestamps = false;
 
 	/**
 	 * Belongs to `user` table.
@@ -20,9 +21,20 @@ class Profile extends Eloquent
 	 * 
 	 * @return void
 	 */
+	public function get_long_birth_date()
+	{
+		$date = DateTime::createFromFormat(Localized_Date::STORED_DATE_FORMAT, $this->get_attribute('birth_date'));
+		return new Localized_Date($date, null, IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+	}
+
+	/**
+	 * Getter for birth_date attributes.
+	 * 
+	 * @return void
+	 */
 	public function get_birth_date()
 	{
-		$date = DateTime::createFromFormat(Base_Controller::STORED_DATE_FORMAT, $this->get_attribute('birth_date'));
-		return $date->format(Base_Controller::PRESENTED_DATE_FORMAT);
+		$date = DateTime::createFromFormat(Localized_Date::STORED_DATE_FORMAT, $this->get_attribute('birth_date'));
+		return new Localized_Date($date, null, IntlDateFormatter::SHORT, IntlDateFormatter::NONE);
 	}
 }
