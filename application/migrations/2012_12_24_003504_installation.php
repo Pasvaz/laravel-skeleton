@@ -16,7 +16,7 @@ class Installation {
 			$table->string('email')->unique();
 			$table->string('password');
 			$table->boolean('remember_me')->nullable();
-			$table->string('activation_hash')->nullable();
+			$table->string('activation_hash')->nullable()->index();
 			$table->string('ip_address')->nullable();
 			$table->boolean('activated')->nullable();
 			$table->text('permissions')->nullable();
