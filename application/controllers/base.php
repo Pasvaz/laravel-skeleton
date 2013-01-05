@@ -2,9 +2,6 @@
 
 class Base_Controller extends Controller 
 {
-	const PRESENTED_DATE_FORMAT='m-d-Y';
-	const STORED_DATE_FORMAT='Y-m-d';
-
 	public $layout = 'layouts.main';
 	public $restful = true;
 
