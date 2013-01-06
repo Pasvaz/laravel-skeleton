@@ -13,3 +13,6 @@
 [submodule "bundles/swiftmailer"]
 	path = bundles/swiftmailer
 	url = https://github.com/Pasvaz/swiftmailer.git
+[submodule "bundles/jquery-file-upload"]
+	path = bundles/jquery-file-upload
+	url = git@github.com:Pasvaz/laravel-jquery-file-upload.git
