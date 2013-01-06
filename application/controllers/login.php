@@ -16,18 +16,63 @@ class Login_Controller extends Base_Controller
 		return Response::error('404');
 	}
 
-	public function get_activate($hash64='null')
+	public function get_activate($hash64 = null)
 	{
-		$hash= base64_decode($hash64);
-		if (!($user=User::where('activation_hash', '=', $hash)->first()))
+		if (is_null($hash64)) return Response::error('404');
+		if (!($user=User::Find_Hash($hash64)))
 			return Response::error('404');
-		$user->activated=true;
-		$user->activation_hash=null;
-		$user->save();
+
+		$user->Activate();
+
 		$messages=new \Laravel\Messages();
-		$messages->add('user', __('Thank you for joining us, now you can login.'));
-		$messages->add('alert_success', 'success');
+		$messages->add('user_alert', __('Thank you for joining us, now you can login.'));
+		$messages->add('alert_type', Alert::SUCCESS);
+
 		return Redirect::to('login')->with_errors($messages)->with_input();
+	}
+
+	public function get_reset($hash64 = null)
+	{
+		if (is_null($hash64))
+		{
+			if (Input::had('hash64')) $hash64 = Input::old('hash64');
+			else return Response::error('404');
+		}
+		if (!($user=User::Find_Hash($hash64)))
+			return Response::error('404');
+
+		return View::make('user.reset_password')->with('hash64', $hash64);
+	}
+
+	public function post_reset()
+	{
+		$rules = array(
+			'hash64' => 'required',
+			'password' => 'required|between:8,30',
+			'repeat_password' => 'required|same:password',
+		);
+
+	    $validation = Validator::make(Input::all(), $rules);
+	    if ($validation->fails())
+	    {
+	    	Input::flash('only', array('hash64', 'hash64'));
+	    	//Input::flash();
+	        return Redirect::to_action('login@reset')->with_errors($validation);
+	    }
+
+		if (!Input::has('hash64') or is_null( ($hash64=Input::get('hash64')) ) ) return Response::error('404');
+
+		$messages=new \Laravel\Messages();
+		$messages->add('user_alert', __('user.password_changed'));
+		$messages->add('alert_type', Alert::SUCCESS);
+
+		if (!User::Change_Password($hash64, Input::get('password')))
+		{
+			$messages->add('user_alert', __('user.password_not_changed'));
+			$messages->add('alert_type', Alert::ERROR);
+		}
+
+		return Redirect::to('login')->with_errors($messages);
 	}
 
 	public function get_newuser($action = null)
@@ -40,15 +85,13 @@ class Login_Controller extends Base_Controller
 	public function post_newuser($action = null)
 	{
 		$date = DateTime::createFromFormat(Input::get('birthdate_format'), Input::get('birthdate'));
-		//dd($date->format(Base_Controller::STORED_DATE_FORMAT));
 		Input::merge(array('birthdate'=>$date->format(Localized_Date::STORED_DATE_FORMAT)));
-		//dd(Input::all());
 		$rules = array(
 			'first_name' => 'required',
 			'last_name' => 'required',
 			'email' => 'required|email|unique:users',
 			'birthdate' => 'required|before:-10 years|after:01-01-1900',
-			'password' => 'required',
+			'password' => 'required|between:8,30',
 		);
 
 	    $validation = Validator::make(Input::all(), $rules);
@@ -64,7 +107,6 @@ class Login_Controller extends Base_Controller
 		$user->password = Input::get('password');
 		$user->name = Input::get('first_name').' '.Input::get('last_name');
 		$user->language = Config::get('application.language');
-		//$user->activation_hash = Hash::make(Str::random(24));
 		$user->activation_hash = hash('md4', Str::random(32));
 		if ($user->save()){
 			$profile = array(
@@ -73,18 +115,7 @@ class Login_Controller extends Base_Controller
 				'birth_date' => $date->format(Localized_Date::STORED_DATE_FORMAT),
 				);
 			$user->profile()->insert($profile);
-
-			$activation_url = URL::base().'/login/activate/'.base64_encode($user->activation_hash);
-			Bundle::start('swiftmailer');
-			$mailer = IoC::resolve('mailer');
-			$message = Swift_Message::newInstance('Message From '.Config::get('application.site-name'))
-			    ->setFrom(array('register@example.com'=>Config::get('application.site-name')))
-			    ->setTo(array($user->email=>$user->name))
-			    ->addPart('Welcome, follow this link to activate your account: '.$activation_url,'text/plain')
-			    ->setBody('Welcome, follow this link to activate your account: '.$activation_url,'text/html');
-
-			// Send the email
-			$mailer->send($message);
+			$user->Validate();
 		}
 		return Redirect::to('home');
 	}
@@ -124,21 +155,67 @@ class Login_Controller extends Base_Controller
 			if (!Auth::user()->activated)
 			{
 				$messages=new \Laravel\Messages();
-				$messages->add('user', __('user.user_not_activated'));
-				$messages->add('alert_warning', 'success');
+				$messages->add('user_alert', __('user.user_not_activated'));
+				$messages->add('alert_type', Alert::WARNING);
 				return Redirect::to('login')->with_errors($messages)->with_input();
 			}
-			Auth::user()->last_login=new \DateTime;
-			Auth::user()->save();
-			if (Auth::user()->language) Session::put('language', Auth::user()->language);
-			$logged_name = Auth::user()->profile->first_name;
-			return Redirect::home()->with('logged_name', $logged_name);
+			Auth::user()->Loggedin();
+			return Redirect::home()->with('logged_name', Auth::user()->profile->first_name);
 		}
 		else 
 		{
-			$validation->errors->add('user', __('user.user_not_found'));
+			$validation->errors->add('user_alert', __('user.user_not_found'));
+			$validation->errors->add('alert_type', Alert::ERROR);
 	        return Redirect::to('login')->with_errors($validation)->with_input();
 	    }
 	}
 
+	// Forgotten get
+	public function get_forgotten()
+	{
+		return View::make('user.login')->with('is_forgotten', true);
+	}
+
+	// Login post
+	public function post_forgotten()
+	{
+	    $rules = array('email' => 'required|email',	);
+
+	    $validation = Validator::make(Input::all(), $rules);
+	    if ($validation->fails())
+	    {
+	        return Redirect::to_action('login@forgotten')->with_errors($validation);
+	    }
+
+		if (!($user=User::where('email', '=', Input::get('email'))->first()))
+		{
+			$validation->errors->add('user_alert', __('user.user_not_found'));
+			$validation->errors->add('alert_type', Alert::ERROR);
+			$validation->errors->add('email', __('user.user_not_found'));
+	        return Redirect::to_action('login@forgotten')->with_errors($validation);
+	    }
+	    else
+		{
+/*			if (!Auth::user()->activated)
+			{
+				$messages=new \Laravel\Messages();
+				$messages->add('user', __('user.user_not_activated'));
+				$messages->add('alert_warning', 'success');
+				return Redirect::to('login')->with_errors($messages)->with_input();
+			}
+*/
+			$messages=new \Laravel\Messages();
+			if ($user->Forget_Password()===true)
+			{
+				$messages->add('user_alert', __('user.reset_password'));
+				$messages->add('alert_type', Alert::SUCCESS);
+			}
+			else
+			{
+				$messages->add('user_alert', __('user.user_not_activated'));
+				$messages->add('alert_type', Alert::ERROR);
+			}
+			return Redirect::to('login')->with_errors($messages)->with_input();
+		}
+	}
 }

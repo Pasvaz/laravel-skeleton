@@ -7,7 +7,7 @@ $rules = array(
 	'last_name' => 'required',
 	'email' => 'required|email|unique:users',
 	'birthdate' => 'required',
-	'password' => 'required',
+	'password' => 'required|between:8,30',
 );
 echo Former::horizontal_open()
   ->id('MyForm')
@@ -40,10 +40,6 @@ echo Former::append("birthdate", 'user.birth_date', $dpicker_attr['data-date'], 
     Former::reset('Reset')
   );?>
 {{Former::close()}}
-
-testing a tooltip {{Bootstrapper\Tooltip::create('HERE', 'This is a nice Tooltip')->with_html(false)->with_placement(Bootstrapper\Tooltip::ON_RIGHT)->get_as_anchor()}}
-<br>
-testing a tooltip {{Bootstrapper\Tooltip::create('HERE', 'Tooltip Title', 'This is a nice <a>Popover</a>')->with_html(true)->get_as_anchor()}}
 @endsection
 
 @section('dynamicscripts')

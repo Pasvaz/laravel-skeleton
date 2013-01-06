@@ -9,20 +9,17 @@
 }
 ?>
 <? echo Former::horizontal_open()
-  ->id('MyForm')
+  ->id('resetPasswordForm')
   ->secure()
-  ->rules(array('email' => 'required|email', 'password' => 'required'))
+  ->rules(array('password' => 'required', 'repeat_password' => 'required|same:password'))
   ->method('POST');?>
 {{Former::token();}}
-{{Former::text("email", "Email")->appendIcon('envelope')}}
-@if (isset($is_forgotten))
-{{\Former::actions (Former::primary_submit('Reset Password'))}}
-@else
+{{Former::hidden("hash64", $hash64)}}
 {{Former::password("password", "Password")->appendIcon('aw_key')}}
+{{Former::password("repeat_password", "Repeat Password")->appendIcon('aw_key')}}
 <? echo \Former::actions (
-    Former::primary_submit('Login'),
-    HTML::link('/login/forgotten', 'Forgot your password?', array('style'=>'padding:20px'))
-  );?>
-@endif
+    Former::primary_submit('Reset Password')
+  );
+?>
 {{Former::close()}}
 @endsection
