@@ -62,6 +62,16 @@ Event::listen('500', function()
 	return Response::error('500');
 });
 
+Event::listen(Laravel\Lang::loader, function($bundle, $language, $file)
+{
+	$lines= Lang::file($bundle, $language, $file);
+	if (count($lines))
+		Log::debug('Loaded file:'.$bundle.'\\'. $language.'\\'. $file. ' has '.count($lines).' lines');
+	else
+		Log::debug('Loaded EMPTY file:'.$bundle.'\\'. $language.'\\'. $file);
+	return $lines;
+});
+
 /*
 |--------------------------------------------------------------------------
 | Route Filters
