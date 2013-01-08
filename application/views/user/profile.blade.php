@@ -76,11 +76,13 @@ $tab = Bootstrapper\Tabbable::tabs_left(
 
 
 @endsection
+@section('addstyles')
+{{ Asset::container('bootstrapper-datepicker')->styles() }}
+{{ Asset::container('bootstrapper-x-editable')->styles() }}
+@endsection
 @section('dynamicscripts')
 {{ Asset::container('bootstrapper-datepicker')->scripts() }}
-{{ Asset::container('bootstrapper-datepicker')->styles() }}
 {{ Asset::container('bootstrapper-x-editable')->scripts() }}
-{{ Asset::container('bootstrapper-x-editable')->styles() }}
 {{Bootstrapper\Javascripter::add_js_snippet('$("#username").editable();')}}
 {{Bootstrapper\Javascripter::write_javascript()}}
 @endsection

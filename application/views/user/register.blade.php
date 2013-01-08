@@ -42,8 +42,10 @@ echo Former::append("birthdate", 'user.birth_date', $dpicker_attr['data-date'], 
 {{Former::close()}}
 @endsection
 
+@section('addstyles')
+{{ Asset::container('bootstrapper-datepicker')->styles() }}
+@endsection
 @section('dynamicscripts')
 {{ Asset::container('bootstrapper-datepicker')->scripts() }}
-{{ Asset::container('bootstrapper-datepicker')->styles() }}
 {{Bootstrapper\Javascripter::write_javascript()}}
 @endsection
