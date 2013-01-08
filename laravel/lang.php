@@ -124,14 +124,13 @@ class Lang {
 	 */
 	public function get($language = null, $default = null)
 	{
-//dd(lang_debug_backtrace());
 		// If no default value is specified by the developer, we'll just return the
 		// key of the language line. This should indicate which language line we
 		// were attempting to render and is better than giving nothing back.
 		if (is_null($default)) $default = $this->key;
 
 		if (is_null($language)) $language = $this->language;
-		Log::lang_debug('Getting '.$this->key.' in language: '.$language.' with default: '.$default);
+		//Log::lang_debug('Getting '.$this->key.' in language: '.$language.' with default: '.$default);
 
 		list($bundle, $file, $line) = $this->parse($this->key);
 
@@ -143,12 +142,12 @@ class Lang {
 			if (!is_null($this->fallback_language) 
 				and $this->fallback_language != $language)
 			{
-				Log::lang_debug('Looking for '.$this->key.' but file not exists:'.$bundle.'\\'. $language.'\\'. $file. ' loading fallback '.$this->fallback_language);
+				//Log::lang_debug('Looking for '.$this->key.' but file not exists:'.$bundle.'\\'. $language.'\\'. $file. ' loading fallback '.$this->fallback_language);
 				return $this->get($this->fallback_language, $default);
 			}
 			else
 			{
-				Log::lang_debug('Looking for '.$this->key.' but file not exists:'.$bundle.'\\'. $language.'\\'. $file. ' returning default value: '.$default);
+				//Log::lang_debug('Looking for '.$this->key.' but file not exists:'.$bundle.'\\'. $language.'\\'. $file. ' returning default value: '.$default);
 				return value($default);
 			}
 		}
@@ -160,13 +159,11 @@ class Lang {
 			and !is_null($this->fallback_language) 
 			and $this->fallback_language != $language)
 		{
-			Log::lang_debug($line.' not found in '.$language.', getting fallback in '.$this->fallback_language);
+			//Log::lang_debug($line.' not found in '.$language.', getting fallback in '.$this->fallback_language);
 			return $this->get($this->fallback_language, $default);
 		}
 		else
 		{
-//dd(lang_debug_backtrace());
-			//dd('got the line in '.((array_key_exists($line, $lines))?'si':'no').' fall '.$this->fallback_language);
 			$line = array_get($lines, $line, $default);
 		}
 
@@ -181,7 +178,7 @@ class Lang {
 			}
 		}
 
-		Log::lang_debug('Returning '.$line.' in '.$language);
+		//Log::lang_debug('Returning '.$line.' in '.$language);
 		return $line;
 	}
 
