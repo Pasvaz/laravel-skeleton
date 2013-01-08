@@ -10,15 +10,21 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         body {
             padding-top: 60px;
             padding-bottom: 40px;
         }
+        footer {
+                height:160px;
+                color: #666;
+                background: #222;
+                padding: 17px 0 18px 0;
+        }
     </style>
     {{ Asset::container('bootstrapper')->styles() }}
-    {{ HTML::style('css/main.css') }}
+    @yield('addstyles')
+    {{-- HTML::style('css/main.css') --}}
     {{ HTML::script('js/modernizr-2.6.1-respond-1.1.0.min.js') }}
     
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
@@ -42,9 +48,8 @@
     <div class="push"><!-- / / --></div> <!-- /push -->
         
     <!-- begin javascript -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../../public/js/jquery-1.8.1.min.js"><\/script>')</script>
-    
+    {{--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>--}}
+    {{--<script>window.jQuery || document.write('<script src="../../../public/js/jquery-1.8.1.min.js"><\/script>')</script>--}}
     {{ Asset::container('bootstrapper')->scripts() }}
     @yield('dynamicscripts')
 

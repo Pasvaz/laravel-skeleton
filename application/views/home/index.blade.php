@@ -9,8 +9,7 @@
 	<meta name="viewport" content="width=device-width">
 	{{ HTML::style('laravel/css/style.css') }}
 	{{ Asset::container('bootstrapper')->styles();}}
-	{{ Asset::container('bootstrap per')->scripts();}}
-	{{ Bootstrapper\Helpers::inject_activate_js(array('popover','tooltip')) }}
+	{{ Asset::container('bootstrapper')->scripts();}}
 </head>
 <body>*/?>
 @section('content')
