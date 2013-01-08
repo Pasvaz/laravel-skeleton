@@ -23,8 +23,8 @@ class Profile extends Eloquent
 	 */
 	public function get_long_birth_date()
 	{
-		$date = DateTime::createFromFormat(Localized_Date::STORED_DATE_FORMAT, $this->get_attribute('birth_date'));
-		return new Localized_Date($date, null, IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+		$date = DateTime::createFromFormat(LocalizedDate::STORED_DATE_FORMAT, $this->get_attribute('birth_date'));
+		return new LocalizedDate($date, null, IntlDateFormatter::LONG, IntlDateFormatter::NONE);
 	}
 
 	/**
@@ -34,7 +34,7 @@ class Profile extends Eloquent
 	 */
 	public function get_birth_date()
 	{
-		$date = DateTime::createFromFormat(Localized_Date::STORED_DATE_FORMAT, $this->get_attribute('birth_date'));
-		return new Localized_Date($date, null, IntlDateFormatter::SHORT, IntlDateFormatter::NONE);
+		$date = DateTime::createFromFormat(LocalizedDate::STORED_DATE_FORMAT, $this->get_attribute('birth_date'));
+		return new LocalizedDate($date, null, IntlDateFormatter::SHORT, IntlDateFormatter::NONE);
 	}
 }

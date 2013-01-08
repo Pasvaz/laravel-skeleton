@@ -21,7 +21,7 @@ echo Former::horizontal_open()
 {{Former::text("email", "Email")->appendIcon('envelope')}}
 
 <?
-$fmt = new Localized_Date(new DateTime(), null, IntlDateFormatter::SHORT, IntlDateFormatter::NONE );
+$fmt = new LocalizedDate(new DateTime(), null, IntlDateFormatter::SHORT, IntlDateFormatter::NONE );
 //dd($fmt->getPattern());
 $jsfmt = $fmt->getDatepickerPattern();
 echo $fmt->datepicker_format.'<br>';

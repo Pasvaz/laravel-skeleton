@@ -11,7 +11,7 @@ define('CH_UTF8_LRE',    "\xE2\x80\xAA"); // U+202A  (Left to Right embedding: t
 define('CH_UTF8_RLE',    "\xE2\x80\xAB"); // U+202B  (Right to Left embedding: treat everything following as RTL text)
 define('CH_UTF8_PDF',    "\xE2\x80\xAC"); // U+202C  (Pop directional formatting: restore state prior to last LRO, RLO, LRE, RLE)
  
-class Localized_Date {
+class LocalizedDate {
 
 	const PRESENTED_DATE_FORMAT='m-d-Y';
 	const STORED_DATE_FORMAT='Y-m-d';
@@ -45,7 +45,7 @@ class Localized_Date {
 	public $datepicker_format;
 
 	/**
-	 * Create a new Localized_Date instance.
+	 * Create a new LocalizedDate instance.
 	 *
 	 * @param  \DateTime  $date
 	 * @param  \IntlDateFormatter $format
